@@ -4,7 +4,6 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.naive_bayes import GaussianNB
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, roc_auc_score, roc_curve
-import matplotlib.pyplot as plt
 
 def do_nothing(train, test):
     return train.copy(), test.copy()
@@ -67,6 +66,8 @@ def eval_lr(trainx, trainy, testx, testy):
     }
 
 if __name__ == "__main__":
+    import matplotlib.pyplot as plt
+    
     # Load data
     train_data = np.loadtxt('spam/spam.train.dat')
     test_data = np.loadtxt('spam/spam.test.dat')
