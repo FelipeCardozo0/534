@@ -1,0 +1,254 @@
+
+==================================================
+3(g) Holdout Evaluation over different split ratios
+
+--- Split ratio (validation size) = 0.1 ---
+
+[Holdout] with L2 penalty:
+  C=1e-04 | Val Acc: 0.8067 | Val AUC: 0.9578
+  C=1e-03 | Val Acc: 0.8933 | Val AUC: 0.9528
+  C=1e-02 | Val Acc: 0.9400 | Val AUC: 0.9816
+  C=1e-01 | Val Acc: 0.9433 | Val AUC: 0.9800
+  C=1e+00 | Val Acc: 0.9400 | Val AUC: 0.9823
+  C=1e+01 | Val Acc: 0.9433 | Val AUC: 0.9801
+  C=1e+02 | Val Acc: 0.9467 | Val AUC: 0.9942
+  C=1e+03 | Val Acc: 0.9667 | Val AUC: 0.9867
+  C=1e+04 | Val Acc: 0.9433 | Val AUC: 0.9762
+  --> Best C for L2: 1e+02 (Val AUC: 0.9942)
+
+[Holdout] with L1 penalty:
+  C=1e-04 | Val Acc: 0.6333 | Val AUC: 0.5000
+  C=1e-03 | Val Acc: 0.7633 | Val AUC: 0.8204
+  C=1e-02 | Val Acc: 0.9167 | Val AUC: 0.9733
+  C=1e-01 | Val Acc: 0.9567 | Val AUC: 0.9832
+  C=1e+00 | Val Acc: 0.9400 | Val AUC: 0.9838
+  C=1e+01 | Val Acc: 0.9500 | Val AUC: 0.9846
+  C=1e+02 | Val Acc: 0.9633 | Val AUC: 0.9910
+  C=1e+03 | Val Acc: 0.9400 | Val AUC: 0.9817
+  C=1e+04 | Val Acc: 0.9433 | Val AUC: 0.9836
+  --> Best C for L1: 1e+02 (Val AUC: 0.9910)
+
+--- Split ratio (validation size) = 0.2 ---
+
+[Holdout] with L2 penalty:
+  C=1e-04 | Val Acc: 0.8117 | Val AUC: 0.9472
+  C=1e-03 | Val Acc: 0.9033 | Val AUC: 0.9546
+  C=1e-02 | Val Acc: 0.9417 | Val AUC: 0.9797
+  C=1e-01 | Val Acc: 0.9417 | Val AUC: 0.9841
+  C=1e+00 | Val Acc: 0.9417 | Val AUC: 0.9786
+  C=1e+01 | Val Acc: 0.9433 | Val AUC: 0.9796
+  C=1e+02 | Val Acc: 0.9467 | Val AUC: 0.9845
+  C=1e+03 | Val Acc: 0.9333 | Val AUC: 0.9797
+  C=1e+04 | Val Acc: 0.9517 | Val AUC: 0.9864
+  --> Best C for L2: 1e+04 (Val AUC: 0.9864)
+
+[Holdout] with L1 penalty:
+  C=1e-04 | Val Acc: 0.5950 | Val AUC: 0.5000
+  C=1e-03 | Val Acc: 0.6700 | Val AUC: 0.8500
+  C=1e-02 | Val Acc: 0.9117 | Val AUC: 0.9680
+  C=1e-01 | Val Acc: 0.9500 | Val AUC: 0.9827
+  C=1e+00 | Val Acc: 0.9467 | Val AUC: 0.9853
+  C=1e+01 | Val Acc: 0.9417 | Val AUC: 0.9795
+  C=1e+02 | Val Acc: 0.9467 | Val AUC: 0.9887
+  C=1e+03 | Val Acc: 0.9483 | Val AUC: 0.9759
+  C=1e+04 | Val Acc: 0.9183 | Val AUC: 0.9728
+  --> Best C for L1: 1e+02 (Val AUC: 0.9887)
+
+--- Split ratio (validation size) = 0.3 ---
+
+[Holdout] with L2 penalty:
+  C=1e-04 | Val Acc: 0.8089 | Val AUC: 0.9423
+  C=1e-03 | Val Acc: 0.8989 | Val AUC: 0.9550
+  C=1e-02 | Val Acc: 0.9367 | Val AUC: 0.9761
+  C=1e-01 | Val Acc: 0.9367 | Val AUC: 0.9787
+  C=1e+00 | Val Acc: 0.9378 | Val AUC: 0.9844
+  C=1e+01 | Val Acc: 0.9444 | Val AUC: 0.9766
+  C=1e+02 | Val Acc: 0.9333 | Val AUC: 0.9816
+  C=1e+03 | Val Acc: 0.9289 | Val AUC: 0.9766
+  C=1e+04 | Val Acc: 0.9300 | Val AUC: 0.9749
+  --> Best C for L2: 1e+00 (Val AUC: 0.9844)
+
+[Holdout] with L1 penalty:
+  C=1e-04 | Val Acc: 0.6144 | Val AUC: 0.5000
+  C=1e-03 | Val Acc: 0.6467 | Val AUC: 0.5000
+  C=1e-02 | Val Acc: 0.9000 | Val AUC: 0.9629
+  C=1e-01 | Val Acc: 0.9433 | Val AUC: 0.9852
+  C=1e+00 | Val Acc: 0.9478 | Val AUC: 0.9804
+  C=1e+01 | Val Acc: 0.9267 | Val AUC: 0.9759
+  C=1e+02 | Val Acc: 0.9422 | Val AUC: 0.9804
+  C=1e+03 | Val Acc: 0.9322 | Val AUC: 0.9785
+  C=1e+04 | Val Acc: 0.9422 | Val AUC: 0.9831
+  --> Best C for L1: 1e-01 (Val AUC: 0.9852)
+
+--- Split ratio (validation size) = 0.4 ---
+
+[Holdout] with L2 penalty:
+  C=1e-04 | Val Acc: 0.7883 | Val AUC: 0.9439
+  C=1e-03 | Val Acc: 0.9017 | Val AUC: 0.9588
+  C=1e-02 | Val Acc: 0.9300 | Val AUC: 0.9742
+  C=1e-01 | Val Acc: 0.9417 | Val AUC: 0.9815
+  C=1e+00 | Val Acc: 0.9492 | Val AUC: 0.9814
+  C=1e+01 | Val Acc: 0.9375 | Val AUC: 0.9832
+  C=1e+02 | Val Acc: 0.9367 | Val AUC: 0.9785
+  C=1e+03 | Val Acc: 0.9392 | Val AUC: 0.9777
+  C=1e+04 | Val Acc: 0.9375 | Val AUC: 0.9818
+  --> Best C for L2: 1e+01 (Val AUC: 0.9832)
+
+[Holdout] with L1 penalty:
+  C=1e-04 | Val Acc: 0.6333 | Val AUC: 0.5000
+  C=1e-03 | Val Acc: 0.5992 | Val AUC: 0.5000
+  C=1e-02 | Val Acc: 0.9058 | Val AUC: 0.9634
+  C=1e-01 | Val Acc: 0.9433 | Val AUC: 0.9740
+  C=1e+00 | Val Acc: 0.9333 | Val AUC: 0.9798
+  C=1e+01 | Val Acc: 0.9408 | Val AUC: 0.9826
+  C=1e+02 | Val Acc: 0.9458 | Val AUC: 0.9835
+  C=1e+03 | Val Acc: 0.9425 | Val AUC: 0.9846
+  C=1e+04 | Val Acc: 0.9433 | Val AUC: 0.9822
+  --> Best C for L1: 1e+03 (Val AUC: 0.9846)
+
+==================================================
+3(h) K-Fold Evaluation over different ks
+
+--- K = 2 ---
+
+[K-Fold] with L2 penalty:
+  C=1e-04 | Val Acc: 0.7367 | Val AUC: 0.9423
+  C=1e-03 | Val Acc: 0.8993 | Val AUC: 0.9594
+  C=1e-02 | Val Acc: 0.9270 | Val AUC: 0.9747
+  C=1e-01 | Val Acc: 0.9460 | Val AUC: 0.9809
+  C=1e+00 | Val Acc: 0.9433 | Val AUC: 0.9813
+  C=1e+01 | Val Acc: 0.9323 | Val AUC: 0.9800
+  C=1e+02 | Val Acc: 0.9337 | Val AUC: 0.9768
+  C=1e+03 | Val Acc: 0.9363 | Val AUC: 0.9799
+  C=1e+04 | Val Acc: 0.9350 | Val AUC: 0.9801
+  --> Best C for L2: 1e+00 (Val AUC: 0.9813)
+
+[K-Fold] with L1 penalty:
+  C=1e-04 | Val Acc: 0.6153 | Val AUC: 0.5000
+  C=1e-03 | Val Acc: 0.6153 | Val AUC: 0.5000
+  C=1e-02 | Val Acc: 0.8853 | Val AUC: 0.9508
+  C=1e-01 | Val Acc: 0.9333 | Val AUC: 0.9767
+  C=1e+00 | Val Acc: 0.9437 | Val AUC: 0.9808
+  C=1e+01 | Val Acc: 0.9307 | Val AUC: 0.9779
+  C=1e+02 | Val Acc: 0.9330 | Val AUC: 0.9783
+  C=1e+03 | Val Acc: 0.9333 | Val AUC: 0.9791
+  C=1e+04 | Val Acc: 0.9353 | Val AUC: 0.9772
+  --> Best C for L1: 1e+00 (Val AUC: 0.9808)
+
+--- K = 5 ---
+
+[K-Fold] with L2 penalty:
+  C=1e-04 | Val Acc: 0.8117 | Val AUC: 0.9452
+  C=1e-03 | Val Acc: 0.9070 | Val AUC: 0.9635
+  C=1e-02 | Val Acc: 0.9323 | Val AUC: 0.9775
+  C=1e-01 | Val Acc: 0.9427 | Val AUC: 0.9816
+  C=1e+00 | Val Acc: 0.9410 | Val AUC: 0.9813
+  C=1e+01 | Val Acc: 0.9400 | Val AUC: 0.9815
+  C=1e+02 | Val Acc: 0.9397 | Val AUC: 0.9816
+  C=1e+03 | Val Acc: 0.9397 | Val AUC: 0.9821
+  C=1e+04 | Val Acc: 0.9420 | Val AUC: 0.9815
+  --> Best C for L2: 1e+03 (Val AUC: 0.9821)
+
+[K-Fold] with L1 penalty:
+  C=1e-04 | Val Acc: 0.6153 | Val AUC: 0.5000
+  C=1e-03 | Val Acc: 0.7483 | Val AUC: 0.7944
+  C=1e-02 | Val Acc: 0.9043 | Val AUC: 0.9633
+  C=1e-01 | Val Acc: 0.9437 | Val AUC: 0.9796
+  C=1e+00 | Val Acc: 0.9427 | Val AUC: 0.9816
+  C=1e+01 | Val Acc: 0.9387 | Val AUC: 0.9815
+  C=1e+02 | Val Acc: 0.9410 | Val AUC: 0.9813
+  C=1e+03 | Val Acc: 0.9403 | Val AUC: 0.9812
+  C=1e+04 | Val Acc: 0.9417 | Val AUC: 0.9819
+  --> Best C for L1: 1e+04 (Val AUC: 0.9819)
+
+--- K = 10 ---
+
+[K-Fold] with L2 penalty:
+  C=1e-04 | Val Acc: 0.8220 | Val AUC: 0.9462
+  C=1e-03 | Val Acc: 0.9127 | Val AUC: 0.9649
+  C=1e-02 | Val Acc: 0.9337 | Val AUC: 0.9779
+  C=1e-01 | Val Acc: 0.9447 | Val AUC: 0.9818
+  C=1e+00 | Val Acc: 0.9427 | Val AUC: 0.9818
+  C=1e+01 | Val Acc: 0.9393 | Val AUC: 0.9813
+  C=1e+02 | Val Acc: 0.9423 | Val AUC: 0.9810
+  C=1e+03 | Val Acc: 0.9403 | Val AUC: 0.9815
+  C=1e+04 | Val Acc: 0.9423 | Val AUC: 0.9815
+  --> Best C for L2: 1e-01 (Val AUC: 0.9818)
+
+[K-Fold] with L1 penalty:
+  C=1e-04 | Val Acc: 0.6153 | Val AUC: 0.5000
+  C=1e-03 | Val Acc: 0.7513 | Val AUC: 0.8229
+  C=1e-02 | Val Acc: 0.9093 | Val AUC: 0.9642
+  C=1e-01 | Val Acc: 0.9433 | Val AUC: 0.9795
+  C=1e+00 | Val Acc: 0.9410 | Val AUC: 0.9810
+  C=1e+01 | Val Acc: 0.9433 | Val AUC: 0.9820
+  C=1e+02 | Val Acc: 0.9427 | Val AUC: 0.9824
+  C=1e+03 | Val Acc: 0.9403 | Val AUC: 0.9810
+  C=1e+04 | Val Acc: 0.9390 | Val AUC: 0.9810
+  --> Best C for L1: 1e+02 (Val AUC: 0.9824)
+
+==================================================
+3(j) Monte Carlo CV over different samples and split ratios
+
+--- s = 5, valsize = 0.2 ---
+
+[MCCV] with L2 penalty:
+  C=1e-04 | Val Acc: 0.8097 | Val AUC: 0.9399
+  C=1e-03 | Val Acc: 0.8990 | Val AUC: 0.9593
+  C=1e-02 | Val Acc: 0.9387 | Val AUC: 0.9782
+  C=1e-01 | Val Acc: 0.9413 | Val AUC: 0.9810
+  C=1e+00 | Val Acc: 0.9433 | Val AUC: 0.9806
+  C=1e+01 | Val Acc: 0.9340 | Val AUC: 0.9786
+  C=1e+02 | Val Acc: 0.9367 | Val AUC: 0.9795
+  C=1e+03 | Val Acc: 0.9450 | Val AUC: 0.9812
+  C=1e+04 | Val Acc: 0.9430 | Val AUC: 0.9846
+  --> Best C for L2: 1e+04 (Val AUC: 0.9846)
+
+[MCCV] with L1 penalty:
+  C=1e-04 | Val Acc: 0.6050 | Val AUC: 0.5000
+  C=1e-03 | Val Acc: 0.7400 | Val AUC: 0.7923
+  C=1e-02 | Val Acc: 0.9073 | Val AUC: 0.9648
+  C=1e-01 | Val Acc: 0.9383 | Val AUC: 0.9767
+  C=1e+00 | Val Acc: 0.9403 | Val AUC: 0.9825
+  C=1e+01 | Val Acc: 0.9450 | Val AUC: 0.9840
+  C=1e+02 | Val Acc: 0.9420 | Val AUC: 0.9820
+  C=1e+03 | Val Acc: 0.9393 | Val AUC: 0.9815
+  C=1e+04 | Val Acc: 0.9397 | Val AUC: 0.9802
+  --> Best C for L1: 1e+01 (Val AUC: 0.9840)
+
+--- s = 10, valsize = 0.2 ---
+
+[MCCV] with L2 penalty:
+  C=1e-04 | Val Acc: 0.8205 | Val AUC: 0.9461
+  C=1e-03 | Val Acc: 0.9112 | Val AUC: 0.9635
+  C=1e-02 | Val Acc: 0.9338 | Val AUC: 0.9780
+  C=1e-01 | Val Acc: 0.9412 | Val AUC: 0.9804
+  C=1e+00 | Val Acc: 0.9410 | Val AUC: 0.9808
+  C=1e+01 | Val Acc: 0.9417 | Val AUC: 0.9806
+  C=1e+02 | Val Acc: 0.9397 | Val AUC: 0.9797
+  C=1e+03 | Val Acc: 0.9332 | Val AUC: 0.9781
+  C=1e+04 | Val Acc: 0.9417 | Val AUC: 0.9825
+  --> Best C for L2: 1e+04 (Val AUC: 0.9825)
+
+[MCCV] with L1 penalty:
+  C=1e-04 | Val Acc: 0.6265 | Val AUC: 0.5000
+  C=1e-03 | Val Acc: 0.7457 | Val AUC: 0.7919
+  C=1e-02 | Val Acc: 0.9038 | Val AUC: 0.9597
+  C=1e-01 | Val Acc: 0.9440 | Val AUC: 0.9785
+  C=1e+00 | Val Acc: 0.9448 | Val AUC: 0.9827
+  C=1e+01 | Val Acc: 0.9362 | Val AUC: 0.9807
+  C=1e+02 | Val Acc: 0.9423 | Val AUC: 0.9822
+  C=1e+03 | Val Acc: 0.9413 | Val AUC: 0.9815
+  C=1e+04 | Val Acc: 0.9392 | Val AUC: 0.9811
+  --> Best C for L1: 1e+00 (Val AUC: 0.9827)
+
+==================================================
+3(k) Retraining optimal models on full training data
+Method     | Penalty | Best C   | Test Acc   | Test AUC  
+-------------------------------------------------------
+holdout    | l2     | 1e+00    | 0.9369     | 0.9835
+holdout    | l1     | 1e+00    | 0.9382     | 0.9835
+kfold      | l2     | 1e-01    | 0.9375     | 0.9830
+kfold      | l1     | 1e+02    | 0.9382     | 0.9830
+mccv       | l2     | 1e+01    | 0.9363     | 0.9832
+mccv       | l1     | 1e+00    | 0.9388     | 0.9835

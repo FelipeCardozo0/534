@@ -1,0 +1,20 @@
+--------------------------------------------------
+Naive Bayes Results
+Preprocessing        | Train Acc  | Train AUC  | Test Acc   | Test AUC  
+--------------------------------------------------
+None                 | 0.8253     | 0.9469     | 0.8170    | 0.9423
+Standardized         | 0.8160     | 0.8907     | 0.8101    | 0.8753
+Log Transformed      | 0.8237     | 0.9543     | 0.8151    | 0.9481
+Binarized            | 0.7987     | 0.9494     | 0.8001    | 0.9447
+
+--------------------------------------------------
+Logistic Regression Results
+Preprocessing        | Train Acc  | Train AUC  | Test Acc   | Test AUC  
+--------------------------------------------------
+None                 | 0.9340     | 0.9777     | 0.9188    | 0.9708
+Standardized         | 0.9333     | 0.9777     | 0.9188    | 0.9709
+Log Transformed      | 0.9477     | 0.9859     | 0.9382    | 0.9826
+Binarized            | 0.9393     | 0.9813     | 0.9250    | 0.9784
+
+Best NB Model: Log Transformed
+Best LR Model: Log Transformed
