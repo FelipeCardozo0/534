@@ -60,6 +60,11 @@ def feature_selection_pearson(x, y):
     Calculates Pearson correlation of the features with the target variable, y.
     Returns the list of feature column indices ranked in descending order of correlation magnitude.
     """
+    x = np.asarray(x)
+    y = np.asarray(y).ravel()
+    if x.ndim == 1:
+        x = x.reshape(-1, 1)
+    
     n_features = x.shape[1]
     correlations = []
     for i in range(n_features):
@@ -78,6 +83,11 @@ def feature_selection_spearman(x, y):
     Calculates Spearman correlation of the features with the target variable, y.
     Returns the list of feature column indices ranked in descending order of correlation magnitude.
     """
+    x = np.asarray(x)
+    y = np.asarray(y).ravel()
+    if x.ndim == 1:
+        x = x.reshape(-1, 1)
+        
     n_features = x.shape[1]
     correlations = []
     for i in range(n_features):
@@ -96,6 +106,11 @@ def feature_selection_mi(x, y):
     Calculates mutual information of the features with the target variable, y.
     Returns the list of feature column indices ranked in descending order of MI.
     """
+    x = np.asarray(x)
+    y = np.asarray(y).ravel()
+    if x.ndim == 1:
+        x = x.reshape(-1, 1)
+        
     mi_scores = mutual_info_classif(x, y, random_state=42)
     
     # Rank in descending order
@@ -119,13 +134,11 @@ def rank_correlation(x, y, method='pearson'):
 def compute_correlation(x, y, method='pearson'):
     """Returns correlation scores (not ranked indices) for each feature."""
     x = np.asarray(x)
-    y = np.asarray(y)
+    y = np.asarray(y).ravel()
     
     if x.ndim == 0:
         x = x.reshape(1, 1)
     elif x.ndim == 1:
-        # Check if it's a single feature with N samples, or N features with 1 sample.
-        # Usually data is (samples, features). A 1D array of length N is N samples for 1 feature.
         x = x.reshape(-1, 1)
         
     n_features = x.shape[1]
@@ -137,7 +150,7 @@ def compute_correlation(x, y, method='pearson'):
             if np.isnan(corr):
                 corr = 0
             scores.append(np.abs(corr))
-        return np.array(scores)
+        return np.array(scores).flatten()
     else:
         scores = []
         for i in range(n_features):
@@ -145,7 +158,7 @@ def compute_correlation(x, y, method='pearson'):
             if np.isnan(corr):
                 corr = 0
             scores.append(np.abs(corr))
-        return np.array(scores)
+        return np.array(scores).flatten()
 
 if __name__ == "__main__":
     X_train, y_train, X_val, y_val, X_test, y_test, feats = preprocess_and_partition('loan_default.csv')
